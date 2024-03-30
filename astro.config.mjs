@@ -5,21 +5,18 @@ import starlight from '@astrojs/starlight';
 export default defineConfig({
 	integrations: [
 		starlight({
-			title: 'My Docs',
+			title: 'Jigsaw Docs',
 			social: {
-				github: 'https://github.com/withastro/starlight',
+				github: 'https://github.com/Kodular',
+				discord: 'https://discord.gg/ZcPuVwkU'
 			},
 			sidebar: [
 				{
 					label: 'Guides',
 					items: [
 						// Each item here is one entry in the navigation menu.
-						{ label: 'Example Guide', link: '/guides/example/' },
+						{ label: 'Getting Started', link: '/guides/getting-started/' },
 					],
-				},
-				{
-					label: 'Reference',
-					autogenerate: { directory: 'reference' },
 				},
 			],
 		}),
