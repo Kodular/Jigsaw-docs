@@ -11,4 +11,35 @@ hero:
       link: /guides/getting-started/
       icon: right-arrow
       variant: primary
+    - text: Download
+      link: "#download"
+      icon: laptop
+      variant: secondary
 ---
+
+import {CardGrid, LinkCard, TabItem, Tabs} from "@astrojs/starlight/components";
+
+# Download
+
+Download the installer for your OS
+
+<Tabs>
+    <TabItem label="Windows" icon="seti:windows">
+        <CardGrid>
+            <LinkCard title="EXE" href="https://github.com/Kodular/Jigsaw/releases/latest" />
+            <LinkCard title="MSI" href="https://github.com/Kodular/Jigsaw/releases/latest" />
+        </CardGrid>
+    </TabItem>
+    <TabItem label="macOS" icon="apple">
+        <CardGrid>
+            <LinkCard title="DMG" href="https://github.com/Kodular/Jigsaw/releases/latest" />
+        </CardGrid>
+    </TabItem>
+    <TabItem label="Linux" icon="linux">
+        <CardGrid>
+            <LinkCard title="DEB" href="https://github.com/Kodular/Jigsaw/releases/latest" />
+            <LinkCard title="RPM" href="https://github.com/Kodular/Jigsaw/releases/latest" />
+            <LinkCard title="AppImage" href="https://github.com/Kodular/Jigsaw/releases/latest" />
+        </CardGrid>
+    </TabItem>
+</Tabs>
